@@ -1,23 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Silas Torres | Data Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Data Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background-color: #f8f9fa; color: #333; }
-    h1 { color: #007acc; }
-    a { color: #007acc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    /* ====== BASE STYLES ====== */
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111827;
+      color: #f9fafb;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #9ca3af;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #2563eb;
+      display: inline-block;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    p.placeholder {
+      color: #6b7280;
+      font-style: italic;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .project {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project p {
+      color: #4b5563;
+    }
   </style>
 </head>
 <body>
-  <h1>Hi, I'm Silas Torres 👋</h1>
-  <p>Applied Mathematics major with hands-on experience in SQL, Python, and Excel. I enjoy using data to uncover insights and build practical solutions.</p>
-  
-  <h2>Projects</h2>
 
-  <h2>Contact</h2>
-  <p><a href="www.linkedin.com/in/silas-torres-a0b7b5378">LinkedIn</a> | <a href="mailto:silast.18@icloud.com">Email Me</a></p>
+  <header>
+    <h1>Your Name</h1>
+    <p>Data Analytics & Data Science Portfolio</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+    
+      <p>My name is Silas and I am a current student at CU Denver studying Applied Mathematics with a minor in Computer Science. I’m interested in solving real-world problems using data.</p>
+    
+      <p>I enjoy working with Python, SQL, and Excel to clean and analyze data. Through my academic background, I have gained strong fundamentals in statistics, programming, optimization modeling, and probability.</p>
+    
+      <p>I’m currently finishing my degree and will be available for full-time opportunities starting in December 2025. I'm looking for internship or entry-level opportunities in data analysis or related domains where I can apply my skills, keep learning, and contribute to data-driven decision-making.</p>
+  </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Project 1 Title</h3>
+        <p class="placeholder"> </p>
+        <p><a href="#">View Project →</a></p>
+      </div>
+
+      <div class="project">
+        <h3>Project 2 Title</h3>
+        <p class="placeholder"> </p>
+        <p><a href="#">View Project →</a></p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="placeholder">
+        LinkedIn: <a href="https://www.linkedin.com/in/silas-torres-a0b7b5378" target="_blank">www.linkedin.com/in/silas-torres-a0b7b5378</a><br>
+        Email: <a href="mailto:silas@email.com">silast.18@icloud.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Silas Torres · Built with GitHub Pages
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
